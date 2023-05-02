@@ -1,0 +1,578 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section > .container{
+    width: 1170px;
+    margin: auto;
+    display: block;
+
+    padding: 30px 50px;
+}
+
+#nav-bar {
+    text-align: center;
+}
+/* /////////////////// Banner ////////////////// */
+#banner {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/images/banner.jpg); 
+    background-size: cover; 
+    height: 50vh;
+    position: relative;
+}
+#banner > h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    color: #fff;
+}
+#banner > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -280%);
+    color: #fff;
+}
+/* ///////////nav-bar ////////////////*/
+#nav-bar{
+    border: 1px solid #ced4da;
+}
+#nav-bar > .container{
+    padding: 0px;
+}
+#nav-bar > .container ul{
+    display: flex;
+    justify-content: center;
+}
+#nav-bar  > .container ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border-right: 1px solid #ced4da;
+    padding: 0px 30px;
+}
+#nav-bar > .container  > ul > li:nth-child(3){
+    padding: 0px 50px;
+}
+#nav-bar > .container > ul > li:first-child{
+    border-left: 1px solid #ced4da;
+}
+#nav-bar > .container > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+#nav-bar > .container > ul > li > a::before{
+    color: #339af0;
+}
+#nav-bar > .container > ul > li > div{
+    position: relative;
+    width: 100px;
+    height: 50px;
+
+}
+#nav-bar > .container > ul > li > div >img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 130px;
+    border: 5px  solid #fff;
+    border-radius: 50%;
+} 
+/* ///////////about//////////////// */
+#about .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#target{
+    margin-top: 20px;
+}
+#target  > h1 {
+    margin-bottom: 32px;
+}
+#target > p{
+    line-height: 1.7;
+}
+
+#target,
+#personal-info{
+    padding-left: 120px;
+}
+#personal-info > h1{
+    margin-bottom: 32px;
+}
+#personal-info > ul > li {
+    line-height: 1.7;
+    list-style: none;
+}
+#personal-info > ul > li:last-child{
+    margin-top: 20px;
+}
+#personal-info > ul > li:last-child > span {
+    color: #339af0;
+}
+#personal-info > ul > li:not(#personal-info > ul > li:last-child) > span {
+    font-weight: bold;
+}
+/* ///////////////job-info//////////////// */
+#job-info > .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 500px;
+    column-gap: 20px;
+    /* border: 1px solid #ced4da; */
+    
+}
+#job-info  > .container >  div {
+    display: grid;
+    grid-template-columns: 75% 25% ;
+    grid-template-rows: 70px auto;
+    border: 1px solid #ced4da;
+    padding: 20px;
+}
+#job-info > .container > div > span{
+    font-size: 32px;
+}
+#job-info > .container > div > ul {
+    grid-column: 1/-1;
+    grid-row: 2;
+    list-style: none;
+}
+.text-bold{
+    font-weight: bold;
+}
+.white-space-20{
+    margin-bottom: 25px;
+}
+.white-space-10{
+    margin-bottom: 7px;
+}
+#job-info > .container > div > ul  > li > p > span {
+    background-color: #339af0;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: #fff;
+}
+.line-height {
+    line-height: 1.5;
+}
+
+/* sở thích */
+.list-hobby{
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+.list-hobby > li > div {
+    font-size: 24px;
+    border: 1px solid #ced4da;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.list-hobby > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ngôn ngữ */
+.level-skill{
+    width: 45px;
+    height: 3px;
+    background-color: gray;
+    margin: 10px 0px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.pass-level{
+    background-color: blue;
+}
+/* ///////////chứng chỉ - giải thưởng /////////////*/
+#certificate > .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+}
+#certificate > .container > h1 {
+    grid-row: 1/2;
+    grid-column:1/-1;
+}
+#certificate > .container > .certificate-detail > img{
+    width: 250px;
+}
+#certificate > .container > .certificate-detail:nth-child(2),
+#certificate > .container > .certificate-detail:nth-child(3)
+{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d6c08d;
+}
+#certificate > .container > .certificate-detail:nth-child(3){
+    border-left: 1px solid #d6c08d;
+    padding-left: 20px;
+}
+.certificate-detail {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+}
+.certificate-detail > div> p:first-child{
+    margin-bottom: 20px;
+}
+/* ////////dự án/////////////////// */
+.project-list {
+    display: flex;
+    column-gap: 32px;
+}
+.project-1 > .header-project > img,
+.project-2 > .header-project > img,
+.project-3 > .header-project > img{
+    width: 100%;
+}
+.project-1 > .header-project,
+.project-2 > .header-project,
+.project-3 > .header-project{
+    border-top: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+}
+.project-name{
+    padding: 12px 20px;
+    border-bottom: 1px solid #ced4da;
+}
+.project-info{
+    padding: 14px 10px;
+}
+.project-info > div{
+    background-color: #339af0;
+    display: inline-block;
+    border: 1px solid #326da8;
+    border-radius: 10%;
+}
+.project-info > div > span{
+   color: #f9fbfd;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   padding: 10px 20px;
+}
+.project-info > div, 
+.project-info > span {
+    margin-right: 10px;
+}
+.table-project{
+    border-collapse: collapse;
+    border: 1px solid #ced4da;
+}
+.project-1 >.table-project > tbody > tr {
+    height: 102px;
+}
+.project-3 >.table-project > tbody > tr{
+    height: 78px;
+}
+.table-project > tbody > tr > td {
+    border-bottom: 1px solid #ced4da;
+    line-height: 1.5;
+    padding: 15px 10px;
+}
+.table-project > tbody > tr > td:first-child{
+    width: 35%;
+}
+.table-project > tbody > tr > td:last-child{
+    width: 65%;
+}
+/* ///////////////footer///////////////// */
+#footer > .container > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+} 
+#footer > .container > ul > li {
+    display: flex;
+    align-items: center;
+}
+.icon-facebook-circled::before,
+.icon-linkedin-circled::before,
+.icon-github-circled::before{
+    color: blue;
+    font-size: 42px;
+}
+
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* reponsive */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+@media (min-width: 768px)and (max-width:1200px){
+
+  .wrapper{
+    max-width: 768px;
+    margin: 0px auto;
+  }
+  #nav-bar{
+    width: 100%;
+}
+#nav-bar > .container{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+/* about */
+
+#about .container{
+    width: 100%;
+
+}
+#target,
+#personal-info{
+    padding-left: 0px;
+}
+#personal-info{
+    margin-left: 50px;
+}
+
+/* job info */
+
+#job-info > .container{
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 500px 500px;
+}
+
+/* chứng nhận giải thưởng*/
+#certificate > .container{
+    width: 100%;
+}
+.certificate-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+}
+#certificate > .container > .certificate-detail > img{
+    width: 100%;
+}
+/* project */
+#project .container{
+    width: 100%;
+}
+.project-list {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 10px;
+}
+.table-project > tbody > tr > td {
+    font-size: 14px;
+}
+.project-info{
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr 1fr 1fr;
+}
+.project-info > div{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.icon-user-1 + span{
+    grid-column: 3/-1;
+}
+/* footer */
+#footer .container{
+    width: 100%;
+}
+}
+
+/* reponsive */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* reponsive */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+@media (max-width: 768px){
+    .wrapper{
+        max-width: 375px;
+        margin: 0px auto;
+    }
+    #banner{
+        width: 100%;
+    }
+    #banner > h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 24px;
+    }
+    #banner > span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        color: #fff;
+        font-size: 12px;
+    }
+    /* nav bar */
+    #nav-bar > .container{
+       width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    #nav-bar > .container ul{
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    #nav-bar > .container > ul >li:nth-child(3){
+        display: none;
+    }
+    #nav-bar  > .container ul li,
+    #nav-bar > .container > ul > li:first-child {
+        border: none;
+    }
+
+    /* about */
+    #about .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    #target,
+    #personal-info{
+    padding: 0px;
+}
+#target h1,
+#personal-info h1{
+margin-bottom: 10px;
+}
+.section-title{
+    padding-bottom: 0px !important;
+}
+/* job info */
+#job-info > .container{
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 300px 300px 300px;
+}
+
+#job-info  > .container >  div {
+    padding: 0px !important;
+}
+
+/* chung nhan -  giai thuong */
+#certificate > .container{
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+}
+.certificate-detail {
+    flex-direction: column;
+}
+#certificate > .container > .certificate-detail > img{
+    width: 100%;
+}
+.section-title {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.font-size-title{
+    font-size: 12px;
+    text-align: center;
+}
+#certificate > .container > .certificate-detail > div > p:not(.text-bold){
+    font-size: 10px;
+    text-align: center;
+}
+
+#certificate > .container > .certificate-detail:nth-child(2),
+#certificate > .container > .certificate-detail:nth-child(3)
+{
+    border: none;
+}
+#certificate > .container > .certificate-detail:nth-child(3){
+    border: none;
+}
+
+
+/* dự án */
+#project .container{
+    width: 100%;
+}
+.project-list {
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 0px;
+}
+
+
+.project-info{
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr 1fr 1fr;
+}
+.project-info > div{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.icon-user-1 + span{
+    grid-column: 3/-1;
+}
+
+/* foooter */
+#footer .container {
+    width: 100%;
+}
+#footer > .container > ul{
+    gap: 10px;
+} 
+.icon-facebook-circled::before,
+.icon-linkedin-circled::before,
+.icon-github-circled::before{
+    font-size: 20px;
+}
+
+}
